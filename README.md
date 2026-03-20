@@ -114,3 +114,9 @@ suspicious-activity-detection-video-models/
 ├── images/
 ├── README.md
 └── requirements.txt
+
+Author
+
+Muhammad Ramzan
+M.Phil Artificial Intelligence
+PUCIT, University of the Punjab
