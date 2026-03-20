@@ -39,7 +39,7 @@ Dataset used in this project:
 
 Final extracted dataset folder used in Colab:
 
-- `/content/TikHarm_frames_16`
+- `/content/TikHarm_frames_16.`
 
 Dataset split structure:
 
@@ -115,7 +115,7 @@ suspicious-activity-detection-video-models/
 ├── README.md
 └── requirements.txt
 
-Author
+##Author
 
 Muhammad Ramzan
 M.Phil Artificial Intelligence
