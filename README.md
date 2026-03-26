@@ -1,122 +1,146 @@
-# Suspicious Activity Detection using VideoMAE, SlowFast, and I3D
+# Suspicious Activity Detection using Video Models 🎥🛡️
 
-This repository contains my M.Phil Artificial Intelligence assignment work on **Suspicious Activity Detection** using three state-of-the-art video understanding models:
-
-- VideoMAE
-- SlowFast
-- I3D
-
-The project performs a **comparative analysis** of these models on a real-world suspicious and harmful content classification task.
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Python](https://img.shields.io/badge/Python-3.12-blue)](https://www.python.org/)
+[![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange)](https://jupyter.org/)
+[![Status](https://img.shields.io/badge/Status-Active-brightgreen)]()
 
 ---
 
-## Project Overview
+## 🔹 Project Summary
 
-The goal of this project is to classify video clips into the following 4 classes:
-
-- Adult Content
-- Harmful Content
-- Safe
-- Suicide
-
-The work includes:
-
-- end-to-end dataset preparation
-- model training and validation
-- checkpoint saving
-- best-model saving
-- test evaluation
-- performance graph generation
-- final results recording for comparison
+This project compares **three state-of-the-art video understanding models** — VideoMAE, SlowFast, and I3D — to detect **suspicious or harmful content** in videos.
+It is designed for students, researchers, and AI enthusiasts to understand **video classification workflows** and evaluate modern video models on real-world datasets.
 
 ---
 
-## Dataset
+## 🔹 Key Features
 
-Dataset used in this project:
+* Classifies video clips into **4 categories**:
 
-- **Kaggle Dataset:** `aryansraut/preprocessed-ucf-crime-dataset-visual`
+  * Adult Content
+  * Harmful Content
+  * Safe
+  * Suicide
+* Uses three advanced video models for comparison:
 
-Final extracted dataset folder used in Colab:
+  * **VideoMAE** – Transformer-based video understanding model
+  * **SlowFast** – Dual-pathway video model for semantic + motion capture
+  * **I3D** – 3D ConvNet for spatial and temporal video features
+* End-to-end workflow:
 
-- `/content/TikHarm_frames_16.`
-
-Dataset split structure:
-
-- train
-- val
-- test
-
-Each sample contains:
-
-- **16 RGB frames**
-- frame size: **224 x 224**
-
-Classes:
-
-- Adult Content
-- Harmful Content
-- Safe
-- Suicide
+  * Dataset preparation
+  * Model training and validation
+  * Saving best models and checkpoints
+  * Test evaluation and performance visualization
+* Ready-to-run **Jupyter notebooks** for each model
 
 ---
 
-## Models Used
+## 🔹 Dataset
 
-### 1. VideoMAE
-VideoMAE is a transformer-based video understanding model that learns spatiotemporal representations from video frames.
+**Dataset used:** [preprocessed UCF-Crime Dataset](https://www.kaggle.com/aryansraut/preprocessed-ucf-crime-dataset-visual)
 
-### 2. SlowFast
-SlowFast is a dual-pathway video model that captures both slow semantic information and fast motion information.
+**Structure:**
 
-### 3. I3D
-I3D (Inflated 3D ConvNet) is a deep video classification model that extends 2D convolutions into 3D convolutions to learn both spatial and temporal features from consecutive video frames.
+```
+/TikHarm_frames_16/
+│── train/
+│── val/
+│── test/
+```
 
----
-
-## Workflow
-
-The implementation includes the following steps:
-
-1. Dataset download from Kaggle
-2. Dataset extraction and verification
-3. Data loading for train, validation, and test sets
-4. Model loading and configuration
-5. Training and validation
-6. Checkpoint saving for resume support
-7. Best model saving
-8. Test evaluation
-9. Graph generation
-10. Final result saving for comparison
+* Each sample contains **16 RGB frames** (224x224)
+* Classes: Adult Content, Harmful Content, Safe, Suicide
 
 ---
 
-## Project Structure
+## 🔹 Models Implemented
+
+| Model        | Description                                                        |
+| ------------ | ------------------------------------------------------------------ |
+| **VideoMAE** | Transformer-based model learning spatiotemporal representations    |
+| **SlowFast** | Dual-pathway model capturing slow semantic info + fast motion info |
+| **I3D**      | Inflated 3D ConvNet for spatiotemporal feature extraction          |
+
+---
+
+## 🔹 Workflow
+
+1. **Dataset download** from Kaggle
+2. **Dataset extraction & verification**
+3. **Data loading** (train, validation, test sets)
+4. **Model loading & configuration**
+5. **Training & validation**
+6. **Checkpoint saving** for resume support
+7. **Best model saving**
+8. **Test evaluation**
+9. **Graph generation** for performance comparison
+10. **Final result recording**
+
+---
+
+## 🔹 Quick Start
+
+1. **Clone the repository**
 
 ```bash
+git clone https://github.com/RamzanPUCIT/suspicious-activity-detection-video-models.git
+cd suspicious-activity-detection-video-models
+```
+
+2. **Install dependencies**
+
+```bash
+pip install -r requirements.txt
+```
+
+3. **Open Jupyter notebooks**
+
+```bash
+jupyter notebook VideoMAE/notebook/YourNotebook.ipynb
+```
+
+4. **Follow notebooks** for training, testing, evaluation, and results visualization
+
+---
+
+## 🔹 Project Structure
+
+```
 suspicious-activity-detection-video-models/
 │
 ├── VideoMAE/
 │   ├── notebook/
 │   ├── plots/
-│   ├── results/
-│
+│   └── results/
 ├── SlowFast/
 │   ├── notebook/
 │   ├── plots/
-│   ├── results/
-│
+│   └── results/
 ├── I3D/
 │   ├── notebook/
 │   ├── plots/
-│   ├── results/
-│
+│   └── results/
 ├── images/
 ├── README.md
 └── requirements.txt
+```
 
-##Author
+---
 
-Muhammad Ramzan
-M.Phil Artificial Intelligence
-PUCIT, University of the Punjab
+
+
+## 🔹 Author
+
+**Muhammad Ramzan**
+M.Phil Artificial Intelligence, PUCIT, University of the Punjab
+
+---
+
+## 🔹 License
+
+This project is licensed under the [MIT License](LICENSE).
+
+---
+
