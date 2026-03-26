@@ -129,22 +129,7 @@ suspicious-activity-detection-video-models/
 
 ---
 
-## 🔹 Contributing
 
-Contributions are **welcome**! You can help by:
-
-* Improving README clarity or formatting
-* Adding usage examples or screenshots
-* Documenting model results or analysis
-
-**How to contribute:**
-
-1. Fork the repository
-2. Make your edits (README, examples, docs)
-3. Submit a Pull Request (PR)
-4. Mention this issue/PR in your description
-
----
 
 ## 🔹 Author
 
